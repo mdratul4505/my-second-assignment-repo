@@ -320,5 +320,8 @@ footer{
     .footer-container{
         gap: 20px;
     }
+    .deals-card{
+        width: 100%;
+    }
 
 }
