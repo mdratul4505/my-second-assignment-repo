@@ -223,15 +223,46 @@ footer{
     width: 70%;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .subscribe-form button {
     padding: 15px 25px;
     border: none;
     background-color: #f4511e;
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
+    
+}
+/* footer style*/
+.footer{
+    max-width: 1140;
+    margin: 0 auto;
+}
+.footer-link{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    
+}
+.footer-link a{
+    text-decoration: none;
+    color: #6B7280;
+}
+.footer-container{
+    justify-content: space-around;
+    margin: 50px 160px;
+}
+.footer-brand{
+    max-width: 350px;
+}
+.footer-description{
+    font-size: 1.4rem;
+}
+.footer-social{
+    display: flex;
+    
+    gap: 24px;
 }
 
 
@@ -239,13 +270,18 @@ footer{
 
 /* media related style */
 @media screen and (max-width:576px) {
-    .navber, .nav-link{
+    .navber, 
+    .footer-social,
+    .nav-link{
         flex-direction: row;
     }
     .item{
         display: none;
     }
-    .flower-lover{
+    .flower-lover,
+    
+    .footer-container
+    {
         flex-direction: column;
     }
     .star-logo{
@@ -274,5 +310,15 @@ footer{
     }
     
 
+    /* footer */
+    .footer-link{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-link{
+        gap: 10px;
+    }
+    .footer-container{
+        gap: 20px;
+    }
 
 }
