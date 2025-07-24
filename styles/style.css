@@ -12,6 +12,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #F5F8FF;
 }
 /* share styles */
 .dark-black{
@@ -204,12 +205,34 @@ footer{
     padding: 100px 20px;
     text-align: center;
     color: white;
+    margin-top: 120px;
 }
 .Subscribe-title{
     font-size: 3.1rem;
-    
-}
+    font-weight: bold;
 
+}
+.subscribe-form{
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.subscribe-form input[type="email"] {
+    padding: 15px;
+    width: 70%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.subscribe-form button {
+    padding: 15px 25px;
+    border: none;
+    background-color: #f4511e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 
 
