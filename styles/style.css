@@ -32,7 +32,7 @@ body{
 }
 .primary-btn{
     background-color: #E95A08;
-    width: 270px;
+    max-width: 270px;
     padding: 19px 80px;
     border: none;
     color: white;
@@ -97,8 +97,118 @@ body{
     font-size: 1.4rem;
     font-weight: 500;
 }
+/* plant section style */
+.plant-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+
+}
+.plant{
+    text-align: center;
+    margin: 0 126px;
+
+}
+.plant-title{
+    margin-top: 225px;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+.plant-description{
+    font-size: 1.4rem;
+}
+.simple-flower{
+    width:270px ;
+    height: 480px;
+    justify-content: center;
+    text-align: center;
+}
+.flower-name{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #111111;
+    margin-bottom: 10px;
+    margin-top: 20px;
 
 
+}
+.used-number{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+/* plant lover section styles */
+.star-logo{
+    
+    max-width: 283px;
+    max-height: 286px;
+    margin-top:-130px;
+    margin-left: -250px;
+}
+    
+.flower-lover{
+    
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 210px;
+
+} 
+.flower-title{
+    
+    font-size: 3.12rem;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+.flower-description{
+ font-size: 1.4rem;   
+}
+.flower-deatels{
+    margin-top: -150px;
+}
+/* deals related style */
+.deal-container{
+    text-align: center;
+}
+.deal-title{
+    font-size: 3.1rem;
+    font-weight: bold;
+}
+.deal-description{
+    font-size: 1.4rem;
+}
+/* card */
+.left-img{
+   border-radius: 14px;
+}
+.right-img{
+    border-radius: 22px;
+}
+.deals-card{
+    gap: 20px;
+}
+
+
+/* footer related style */
+footer{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.subscribe-section{
+    background-image: url(/assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+.Subscribe-title{
+    font-size: 3.1rem;
+    
+}
 
 
 
@@ -112,16 +222,34 @@ body{
     .item{
         display: none;
     }
+    .flower-lover{
+        flex-direction: column;
+    }
+    .star-logo{
+        display: none;
+    }
     .hero{
         flex-direction: column-reverse;
     }
-    .hero-container{
+    .hero-container
+    
+    {
         justify-items: center;
 
     }
     .hero-img{
         width: 100%;
     }
+
+    /* grid related style */
+    .plant-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .plant-container{
+        justify-items: center;
+        gap: 10px;
+    }
+    
 
 
 }
