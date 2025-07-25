@@ -312,6 +312,13 @@ footer{
     gap: 20px;
     justify-items: center;
   }
+  .lili-img{
+    width: 98%;
+  }
+  .primary-btn{
+    width: 100%;
+    padding: 10px 40px;
+  }
 
   .simple-flower {
     width: 100%;
@@ -333,6 +340,9 @@ footer{
     margin-top: 100px;
     gap: 20px;
   }
+  .flower-store{
+    width: 100%;
+  }
 
   .flower-deatels {
     margin-top: 0;
@@ -346,16 +356,28 @@ footer{
   .flower-description {
     font-size: 1rem;
   }
+  .star-logo{
+    display: none;
+  }
 
   .deals-card {
     flex-direction: column;
     align-items: center;
+  }
+  .right-img{
+    width: 100%;
+  }
+  .left-img{
+    
   }
 
   
 
   .subscribe-form input[type="email"] {
     width: 100%;
+  }
+  .subscribe-section{
+    width: 89%;
   }
 
   .footer-container {
