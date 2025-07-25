@@ -233,13 +233,15 @@ footer{
     margin: 0 auto;
 }
 .subscribe-section{
-    background-image: url(/assets/news-letter-bg.png);
+    background-image: url(../assets/news-letter-bg.png);
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
     text-align: center;
     color: white;
     margin-top: 120px;
+    max-width: 91.7%;
+    
 }
 .Subscribe-title{
     font-size: 3.1rem;
@@ -335,6 +337,12 @@ footer{
 
   .hero-description {
     font-size: 1rem;
+    /*
+    justify-content: center;
+    justify-items: center;
+    text-align: center; 
+     */
+    
   }
 
   .hero-images img {
@@ -343,15 +351,15 @@ footer{
 
   .plant-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 5px;
     justify-items: center;
   }
   .lili-img{
-    width: 98%;
+    width: 90%;
   }
   .primary-btn{
-    width: 100%;
-    padding: 10px 40px;
+    width: 90%;
+    padding: 10px 20px;
   }
 
   .simple-flower {
@@ -361,6 +369,12 @@ footer{
   .plant{
     margin: 0 40px;
   }
+  /* new style */
+  .simple-plant{
+    justify-content: center;
+    justify-items: center;
+  }
+  /* new style */
 
   .plant-title {
     font-size: 2rem;
@@ -426,13 +440,15 @@ footer{
     width: 100%;
   }
   .subscribe-section{
-    width: 91.7%;
-    
+    width:100%;
+    justify-items: center;
+     justify-content: center; 
+    /*  */
   }
 
   .footer-container {
     flex-direction: column;
-    margin: 20px;
+    margin: 10px;
     gap: 30px;
   }
 
