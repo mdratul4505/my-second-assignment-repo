@@ -171,26 +171,60 @@ body{
     margin-top: -150px;
 }
 /* deals related style */
-.deal-container{
-    text-align: center;
-}
-.deal-title{
-    font-size: 3.1rem;
-    font-weight: bold;
-}
-.deal-description{
-    font-size: 1.4rem;
-}
-/* card */
-.left-img{
-   border-radius: 14px;
-}
-.right-img{
-    border-radius: 22px;
-}
-.deals-card{
-    gap: 20px;
-}
+.banner-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+    }
+
+    .left-banners {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .banner {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      height: 150px;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .banner-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+    }
+
+    .banner-content h3,
+    .banner-content h2 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .banner-content a {
+      color: white;
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .right-banner {
+      height: 320px;
+    }
+
+    .right-banner h2 {
+      font-size: 32px;
+    }
 
 
 /* footer related style */
@@ -324,6 +358,9 @@ footer{
     width: 100%;
     height: auto;
   }
+  .plant{
+    margin: 0 40px;
+  }
 
   .plant-title {
     font-size: 2rem;
@@ -360,24 +397,37 @@ footer{
     display: none;
   }
 
-  .deals-card {
-    flex-direction: column;
-    align-items: center;
-  }
-  .right-img{
-    width: 100%;
-  }
-  .left-img{
-    
-  }
-
   
+  .banner-container {
+    grid-template-columns: 1fr;
+  }
 
+  .left-banners {
+    flex-direction: column;
+  }
+
+  .banner,
+  .right-banner {
+    height: 160px;
+  }
+
+  .right-banner h2 {
+    font-size: 22px;
+  }
+
+  .banner-content h3 {
+    font-size: 16px;
+  }
+
+  .banner-content a {
+    font-size: 12px;
+  }
   .subscribe-form input[type="email"] {
     width: 100%;
   }
   .subscribe-section{
-    width: 89%;
+    width: 91.7%;
+    
   }
 
   .footer-container {
