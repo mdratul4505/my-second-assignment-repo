@@ -175,6 +175,7 @@ body{
       display: grid;
       grid-template-columns: 1fr 2fr;
       gap: 20px;
+      margin-top: 120px;
     }
 
     .left-banners {
@@ -240,7 +241,7 @@ footer{
     text-align: center;
     color: white;
     margin-top: 120px;
-    max-width: 91.7%;
+    max-width: 100%;
     
 }
 .Subscribe-title{
@@ -305,7 +306,7 @@ footer{
 
 
 /* media related style */
-@media screen and (max-width: 576px) {
+ @media screen and (max-width: 490px) {
   .width {
     padding: 0 15px;
   }
@@ -337,11 +338,7 @@ footer{
 
   .hero-description {
     font-size: 1rem;
-    /*
-    justify-content: center;
-    justify-items: center;
-    text-align: center; 
-     */
+    
     
   }
 
@@ -369,12 +366,12 @@ footer{
   .plant{
     margin: 0 40px;
   }
-  /* new style */
+   
   .simple-plant{
     justify-content: center;
     justify-items: center;
   }
-  /* new style */
+  
 
   .plant-title {
     font-size: 2rem;
@@ -440,10 +437,10 @@ footer{
     width: 100%;
   }
   .subscribe-section{
-    width:100%;
+    width:90%;
     justify-items: center;
      justify-content: center; 
-    /*  */
+    
   }
 
   .footer-container {
@@ -463,4 +460,4 @@ footer{
   .Subscribe-title {
     font-size: 2rem;
   }
-}
+} 
